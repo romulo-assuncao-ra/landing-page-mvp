@@ -1,0 +1,137 @@
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-9);
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: var(--space-7);
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0 0 var(--space-3);
+}
+
+.section-heading p:last-child {
+  color: var(--color-text-secondary);
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-2);
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button--primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.button--secondary {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.button--secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button--light {
+  background: var(--color-white);
+  color: var(--color-secondary);
+}
+
+.card {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  box-shadow: var(--shadow-sm);
+}
+
+.card h3 {
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.card p {
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.card__icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.text-link {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
