@@ -1,2 +1,104 @@
-@media (max-width:900px){.main-navigation__list{gap:.8rem}.header__container{gap:.75rem}}
-@media (max-width:767px){.header__container{position:relative}.menu-toggle{display:block}.header__cta{display:none}.main-navigation{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--color-border);box-shadow:0 8px 20px rgba(0,0,0,.08)}.main-navigation.is-open{display:block}.main-navigation__list{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1rem}.main-navigation a{display:block;padding:.85rem .5rem}.hero{min-height:420px}.cards{grid-template-columns:1fr}}
+@media (max-width: 900px) {
+  .card-grid--services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__content,
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__media {
+    order: -1;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  .menu-toggle {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .main-navigation {
+    position: absolute;
+    top: 72px;
+    right: 1rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-background);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .main-navigation.is-open {
+    display: flex;
+  }
+
+  .main-navigation__list {
+    flex-direction: column;
+  }
+
+  .main-navigation__list a {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .main-navigation > .button {
+    width: 100%;
+  }
+
+  .card-grid--differentials,
+  .card-grid--portfolio,
+  .card-grid--testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__content,
+  .site-footer__content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-navigation {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-grid--services {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

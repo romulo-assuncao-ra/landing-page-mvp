@@ -1,15 +1,42 @@
-# Landing Page Institucional — MVP V1
+# Landing Page MVP
 
-Projeto estático em HTML5, CSS3 e JavaScript.
+Landing page institucional estática — V1.
 
-## Sprint atual
-Sprint 1 — Header + Navegação (US01)
+## Stack
 
-## Executar validação
-```bash
-node tests/validate-header.js
-```
+- HTML5
+- CSS3
+- JavaScript
+- Git/GitHub
 
-## Git
-Commit planejado/realizado para esta entrega:
-`feat: implementa header e navegacao`
+## Estrutura
+
+- `index.html` — estrutura semântica principal
+- `css/` — estilos
+- `js/` — interações
+- `assets/` — imagens, ícones e fontes
+- `docs/` — documentação do projeto
+- `tests/` — artefatos de testes
+
+## Executar localmente
+
+Não há dependências de Node na V1.
+
+Opção 1: abrir `index.html` diretamente no navegador.
+
+Opção 2: utilizar um servidor local, por exemplo a extensão Live Server no VS Code.
+
+## Próximas etapas
+
+1. Substituir textos placeholder.
+2. Substituir imagens placeholder.
+3. Definir identidade visual.
+4. Validar conteúdo com o responsável pelo negócio.
+5. Implementar testes.
+6. Configurar GitHub.
+7. Implementar CI/CD.
+8. Realizar deploy.
+
+## Status
+
+Setup inicial + HTML semântico concluídos.
